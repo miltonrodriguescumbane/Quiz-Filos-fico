@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participantes | Quiz Filosófico</title>
+  <link rel="stylesheet" href="participantes.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="regras.html">Regras</a></li>
+        <li><a href="registar.html">Registar Grupo</a></li>
+        <li><a href="participantes.html">Participantes</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="participantes">
+      <h1>Grupos Participantes</h1>
+      <p>Esta secção apresentará todos os grupos apurados, com os respetivos duelos e datas agendadas.</p>
+      <p class="aviso">📌 Ainda não há grupos registados.</p>
+      <a href="registar.html" class="btn">📋 Registar o meu grupo</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook" /></a>
+      <a href="https://youtube.com" target="_blank"><img src="youtube.png" alt="YouTube" /></a>
+    </div>
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

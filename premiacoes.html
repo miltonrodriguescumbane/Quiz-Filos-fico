@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premiações | Quiz Filosófico</title>
+  <link rel="stylesheet" href="premiacoes.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="regras.html">Regras</a></li>
+        <li><a href="reclamacoes.html">Reclamações</a></li>
+        <li><a href="registar.html">Registar Grupo</a></li>
+        <li><a href="premiacoes.html">Premiações</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="premios">
+      <h1>Premiações</h1>
+      <p>Ao longo da competição, os grupos serão eliminados fase após fase. No final, os <strong>três últimos grupos restantes</strong> entre os dez participantes iniciais serão oficialmente premiados.</p>
+      <p class="aviso">⚠️ Os prêmios ainda não estão disponíveis. Serão divulgados oportunamente pelo organizador do Quiz Filosófico.</p>
+      <p>As premiações visam reconhecer o mérito académico, a dedicação filosófica e o espírito de equipa demonstrado ao longo do torneio.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+     
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

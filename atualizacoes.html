@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atualizações | Quiz Filosófico</title>
+  <link rel="stylesheet" href="atualizacoes.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="regras.html">Regras</a></li>
+        <li><a href="reclamacoes.html">Reclamações</a></li>
+        <li><a href="registar.html">Registar Grupo</a></li>
+        <li><a href="premiacoes.html">Premiações</a></li>
+        <li><a href="atualizacoes.html">Atualizações</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="atualizacoes">
+      <h1>Atualizações</h1>
+      <p>Este será o espaço oficial para divulgar <strong>os dias, horários e situações dos eventos</strong> do Quiz Filosófico.</p>
+      <p class="aviso">📌 Ainda não há atualizações disponíveis neste momento.</p>
+
+      <div class="notificacao">
+        <h2>Deseja ser notificado?</h2>
+        <p>Insira o seu e-mail para receber notificações sempre que novas atualizações forem publicadas.</p>
+        <form action="https://formsubmit.co/quizfilosofico@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Pedido de Notificação de Atualizações">
+          <label for="email">Seu e-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="exemplo@email.com" />
+          <button type="submit">🔔 Quero ser notificado</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      
+    </div>
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

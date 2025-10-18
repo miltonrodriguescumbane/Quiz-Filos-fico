@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registar Grupo | Quiz Filosófico</title>
+  <link rel="stylesheet" href="registar.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="regras.html">Regras</a></li>
+        <li><a href="reclamacoes.html">Reclamações</a></li>
+        <li><a href="registar.html">Registar Grupo</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h1>Registar Grupo</h1>
+      <p class="aviso">⚠️ O grupo deve obrigatoriamente incluir pelo menos um homem e uma mulher. Caso contrário, será desclassificado.</p>
+
+      <form action="https://formsubmit.co/quizfilosofico@gmail.com" method="POST" onsubmit="return confirmarEnvio()">
+         <input type="hidden" name="_next" value="obrigado.html">
+        <input type="hidden" name="_subject" value="Novo registo de grupo - Quiz Filosófico">
+  
+        <fieldset>
+        <legend>Representante do Grupo</legend>
+        <label>Nome completo:</label>
+        <input type="text" name="representante_nome" required />
+
+          <label>Email:</label>
+          <input type="email" name="representante_email" required />
+
+          <label>Contacto:</label>
+          <input type="tel" name="representante_contacto" required />
+
+          <label>Ano:</label>
+          <select name="representante_ano" required>
+            <option value="">Selecione</option>
+            <option>Primeiro Ano</option>
+            <option>Segundo Ano</option>
+            <option>Terceiro Ano</option>
+            <option>Quarto Ano</option>
+          </select>
+
+          <label>Regime:</label>
+          <select name="representante_regime" required>
+            <option value="">Selecione</option>
+            <option>Laboral</option>
+            <option>Pós-laboral</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Segundo Elemento</legend>
+          <label>Nome completo:</label>
+          <input type="text" name="elemento2_nome" required />
+
+          <label>Ano:</label>
+          <select name="elemento2_ano" required>
+            <option value="">Selecione</option>
+            <option>Primeiro Ano</option>
+            <option>Segundo Ano</option>
+            <option>Terceiro Ano</option>
+            <option>Quarto Ano</option>
+          </select>
+
+          <label>Regime:</label>
+          <select name="elemento2_regime" required>
+            <option value="">Selecione</option>
+            <option>Laboral</option>
+            <option>Pós-laboral</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terceiro Elemento</legend>
+          <label>Nome completo:</label>
+          <input type="text" name="elemento3_nome" required />
+
+          <label>Ano:</label>
+          <select name="elemento3_ano" required>
+            <option value="">Selecione</option>
+            <option>Primeiro Ano</option>
+            <option>Segundo Ano</option>
+            <option>Terceiro Ano</option>
+            <option>Quarto Ano</option>
+          </select>
+
+          <label>Regime:</label>
+          <select name="elemento3_regime" required>
+            <option value="">Selecione</option>
+            <option>Laboral</option>
+            <option>Pós-laboral</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">📨 Submeter dados do grupo</button>
+
+        
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    function confirmarEnvio() {
+      return confirm("Deseja confirmar o envio dos dados do grupo?");
+    }
+  </script>
+</body>
+</html>

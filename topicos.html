@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tópicos de Estudo | Quiz Filosófico</title>
+  <link rel="stylesheet" href="topicos.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="regras.html">Regras</a></li>
+        <li><a href="topicos.html">Tópicos de Estudo</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topicos">
+      <h1>Tópicos de Estudo</h1>
+      <p>Estes são os conteúdos programáticos que servirão de base para as questões do Quiz Filosófico. Recomenda-se que os grupos estudem com antecedência e profundidade.</p>
+      <ol>
+        <li>Elaboração de citações segundo as normas da Faculdade de Filosofia.</li>
+        <li>Elementos pré-textuais e pós-textuais de um ensaio académico.</li>
+        <li>História da Filosofia Antiga: os pré-socráticos e os clássicos — conhecer as teorias centrais.</li>
+        <li>Datas especiais e comemorativas em Moçambique.</li>
+        <li>Conhecimento das obras principais de Platão e Aristóteles — e suas teorias fundamentais.</li>
+        <li>Importância da Filosofia na formação académica e cidadã.</li>
+        <li>Definição dos conceitos: Síntese, Resumo, Carta, Acta, Enciclopédia, Compêndio, Suma.</li>
+        <li>Títulos dos artigos publicados pelos professores da Faculdade.</li>
+        <li>Lógica: silogismos e falácias — exemplos práticos e regras básicas do silogismo.</li>
+
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+
+    </div>
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

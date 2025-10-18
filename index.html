@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Filosófico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">#QUIZ-FAF</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="registar.html">Registar</a></li>
+        <li><a href="http://127.0.0.1:5500/regras.html#regras">Regras de Jogo</a></li>
+        <li><a href="participantes.html">Ver Participantes</a></li>
+        <li><a href="#sair">Live</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img class="logo-img" src="Arquivos/Logótipo estilizado .png" alt="Logótipo Filosófico" />
+    <p>O SABER INICIA COM UMA QUESTÃO</p>
+    <div class="banner-gallery">
+      <img src="Arquivos/19629.jpg" alt="Imagem de reflexão filosófica" />
+      <img src="Arquivos/1905.i211.003_tribune debate composition.jpg" alt="Debate filosófico em tribuna" />
+    </div>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>Veja o histórico dos participantes</h2>
+    </section>
+
+    <section class="grid-buttons">
+      <a href="registar.html" class="btn">📋 Registar Grupo</a>
+      <a href="participantes.html" class="btn">👥 Ver Participantes</a>
+      <a href="regras.html" class="btn">📖 Regras de Jogo</a>
+      <a href="premiacoes.html" class="btn">🏆 Premiações</a>
+      <a href="reclamacoes.html" class="btn">💬 Sugestões / Reclamações</a>
+      <a href="atualizacoes.html" class="btn">🔔 Atualizações</a>
+    </section>
+      
+    <section class="dupla-botoes">
+      <a href="googlemeet.com" class="btn entrar-btn"> Assisitr Quiz</a>
+      <a href="topicos.html" class="btn sair-btn">Temas de Estudo</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="Arquivos/facebook.png" alt=""></a>
+      <a href="https://youtube.com" target="_blank"><img src="Arquivos/youtube.png" alt="YouTube" /></a>
+    </div>
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

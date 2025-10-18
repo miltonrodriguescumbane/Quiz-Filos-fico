@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regras do Jogo | Quiz Filosófico</title>
+  <link rel="stylesheet" href="regras.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Arquivos/Logótipo estilizado .png" alt="Logótipo" />
+      <span>QUIZ FILOSÓFICO</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#regras">Regras</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="regras" id="regras">
+      <h1>Regras do Jogo</h1>
+      <ol>
+        <li><strong>Estrutura Geral</strong>
+          <ol>
+            <li>O Quiz Filosófico é um jogo académico competitivo entre equipas de estudantes.</li>
+            <li>O objetivo é alcançar uma das três posições premiadas: 1.º, 2.º ou 3.º lugar.</li>
+            <li>Cada equipa é composta por 3 estudantes: obrigatoriamente um homem, uma mulher e um terceiro elemento de livre escolha.</li>
+            <li>Cada equipa deve ser registada por um líder, responsável pelo preenchimento do formulário com os dados dos três membros e seus respetivos níveis (1.º, 2.º, 3.º ou 4.º ano).</li>
+            <li>Nenhum participante pode estar registado em mais de uma equipa.</li>
+            <li>Os dados dos participantes devem ser verdadeiros e corretamente preenchidos.</li>
+            <li>A ausência de dois elementos numa equipa implica desclassificação imediata.</li>
+            <li>A competição decorre ao longo do ano letivo, com o duelo final a realizar-se no Dia Mundial da Filosofia.</li>
+          </ol>
+        </li>
+        <li><strong>Fases do Jogo</strong>
+          <ol>
+            <li>Cada jogo é eliminatório: a equipa perdedora é eliminada.</li>
+            <li>O jogo é dividido em três fases, com pontuação acumulada:</li>
+            <li><em>Fase 1 – Múltipla Escolha:</em> 15 perguntas, 5 pontos por acerto, total de 75 pontos.</li>
+            <li><em>Fase 2 – Verdadeiro ou Falso:</em> 10 perguntas, 10 pontos por acerto, total de 100 pontos.</li>
+            <li><em>Fase 3 – Questões Aleatórias:</em> 5 perguntas, 25 pontos por acerto, total de 125 pontos.</li>
+          </ol>
+        </li>
+        <li><strong>Pontuação Total</strong>
+          <ol>
+            <li>Pontuação máxima possível: 400 pontos.</li>
+            <li>A equipa com maior pontuação vence.</li>
+            <li>A equipa com menor pontuação é eliminada.</li>
+            <li>Em caso de empate, repete-se a Fase 3 com 3 perguntas de desempate.</li>
+          </ol>
+        </li>
+        <li><strong>Conteúdo e Nível</strong>
+          <ol>
+            <li>As perguntas serão adaptadas ao nível mais baixo entre as equipas em confronto.</li>
+            <li>Os tópicos serão divulgados com antecedência para estudo.</li>
+          </ol>
+        </li>
+        <li><strong>Tempo e Resposta</strong>
+          <ol>
+            <li>Cada pergunta deve ser respondida em até 30 segundos.</li>
+            <li>Ultrapassado esse tempo, a pergunta é considerada perdida.</li>
+            <li>Apenas um elemento da equipa responde por vez.</li>
+            <li>O elemento responsável pode ser alterado a qualquer momento.</li>
+          </ol>
+        </li>
+        <li><strong>Júris e Avaliação</strong>
+          <ol>
+            <li>Cada jogo será acompanhado por 3 júris.</li>
+            <li>Os júris farão a contagem dos pontos em tempo real.</li>
+            <li>Os resultados serão anunciados ao final de cada fase.</li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      
+    <p>&copy; 2025 Quiz Filosófico. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
